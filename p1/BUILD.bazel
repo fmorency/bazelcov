@@ -1,0 +1,15 @@
+load("@rules_rust//rust:defs.bzl", "rust_binary", "rust_test")
+
+rust_binary(
+    name = "p1",
+    srcs = [
+        "src/main.rs",
+    ],
+    deps = [
+    ],
+)
+
+rust_test(
+    name = "p1_test",
+    crate = ":p1",
+)
